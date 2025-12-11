@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "orangene.online"
+CUSTOM_DOMAIN = "aeoran.xyz"
 
 [env.dev.vars]
 MODE = "debug"
@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.orangene.online", custom_domain = true },
-  { pattern = "quay.orangene.online", custom_domain = true },
-  { pattern = "gcr.orangene.online", custom_domain = true },
-  { pattern = "k8s-gcr.orangene.online", custom_domain = true },
-  { pattern = "k8s.orangene.online", custom_domain = true },
-  { pattern = "ghcr.orangene.online", custom_domain = true },
-  { pattern = "cloudsmith.orangene.online", custom_domain = true },
+  { pattern = "docker.aeoran.xyz", custom_domain = true },
+  { pattern = "quay.aeoran.xyz", custom_domain = true },
+  { pattern = "gcr.aeoran.xyz", custom_domain = true },
+  { pattern = "k8s-gcr.aeoran.xyz", custom_domain = true },
+  { pattern = "k8s.aeoran.xyz", custom_domain = true },
+  { pattern = "ghcr.aeoran.xyz", custom_domain = true },
+  { pattern = "cloudsmith.aeoran.xyz", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -31,7 +31,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.orangene.online", custom_domain = true }
+route = { pattern = "docker-staging.aeoran.xyz", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
